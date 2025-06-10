@@ -6,63 +6,56 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
-  <title>Frontend Mentor | QR code component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-    body {
-      font-family: 'Lexend Deca', sans-serif;
-      font-family: 'Outfit', sans-serif;
-      background-color: hsl(212, 45%, 89%);
-      font-size: 15px;
+  <title>QR code component By Earth</title>
+<style>
+  body {
+    background-color: hsl(212, 45%, 89%);
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px; 
+    height: 100vh; /* ทำให้ความสูงของ body เท่ากับความสูงของ viewport */
+    display: flex;
+    align-items: center; /* ทำให้อยู่กึ่งกลางแนวตั้ง */
+    justify-content: center;
+  }
+  .container {
+    background-color: white;
+    padding: 1%;
+    border-radius: 5%;
+    width: 250px;
+    margin: 0 auto;
+    text-align: center; /* ทำให้ข้อความอยู่กึ่งกลาง */
+    img {
+      width: 100%;;
+      border-radius: 5%;
     }
-    .container {
-      background-color: hsl(0, 0%, 100%);
-      max-width: 300px;
-      width: 100%;
-      padding: 10px;
-      border-radius: 20px;
-      margin: auto;
-      margin-top: 100px;
+    .content {
+    padding: 0 1.8%;
     }
-    .in {
-      margin: 6px;
-      
-    }
-    img{
-      border-radius: 10px;
+    h3 {
+      color: hsl(218, 44%, 22%);
+      line-height: 1.2;
+      font-weight: 700; 
     }
     p {
-      color:hsl(220, 15%, 55%);
-      font-size: 15px;
-      
+      color: hsl(216, 15%, 48%);
+      font-weight: 400; 
+      line-height: 1.5;
     }
-    .text {
-      text-align: center;
-      margin-bottom: 5%;
     }
-    h2 {
-      color:hsl(218, 44%, 22%);
-    }
-  </style>
+
+  
+</style>
 </head>
 <body>
 
   <div class="container">
-    <div class="in">
-      <div class="img">
-        <img src="images/image-qr-code.png" alt="QR-Code" style="width:100%;">
-      </div>
-      <div class="text">
-        <h2>Improve your front-end skills by building projects</h2>
-        <p>Scan the QR code to visit Frontend <br>Mentor and take your coding skills to<br> the next level</p>
-      </div>
+    <img src="./images/image-qr-code.png" alt="QR Code">
+    <div class="content">
+      <h3>Improve your front-end skills by building projects</h3>
+      <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
     </div>
-  </div><!--end container-->
+    
+  </div>
+
 </body>
 </html>
